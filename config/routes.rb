@@ -1,5 +1,8 @@
 Opentrivia::Application.routes.draw do
+  devise_for :users
 	resources :questions
+	
+	root :to => "questions#index"
 	#match ':controller(/:action(:/id))(.:format)', :via => [:get, :post]
   #get "questions/index"
   # The priority is based upon order of creation: first created -> highest priority.
