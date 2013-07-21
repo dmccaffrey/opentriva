@@ -4,7 +4,7 @@
 </div>
 
 <% @question.each do |q| %>
-	<a href="browser/view/<%= q.id %>">
+	<a href="/questions/<%= q.id %>">
 	<div class="card-sm card-front">
 		<div class="question">
 			<%= q.question %>
