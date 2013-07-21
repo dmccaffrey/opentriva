@@ -1,0 +1,48 @@
+<center>
+<h1><%= notice %></h1>
+<div class="card card-back">
+	<div class="logo">
+	</div>
+	
+	<div class="category">
+		<%= @question['category'] %>
+	</div>
+	
+	<div class="caption">
+		Card Back
+	</div>
+	
+	<div class="qrcode">
+		<center>
+			<%= image_tag "qrcode.png" %>
+	
+	</div>
+</div>
+<div class="card card-front">
+	<div class="question">
+		<%= @question['question'] %>
+	</div>
+	
+	<div class="hint">
+		<%= @question['hint'] %>
+	</div>
+	
+	<div class="answer-block">
+		<div class="answer">
+			<%= @question['answer'] %>
+		</div>
+		
+		<div class="details">
+			<%= @question['details'] %>
+		</div>
+		
+		<div class="reference">
+			<%= @question['reference'] %>
+		</div>
+	</div>
+	
+	<div class="caption">
+		Card Face
+	</div>
+</div>
+</center>

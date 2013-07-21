@@ -1,0 +1,38 @@
+<center>
+<div class="filter-bar">
+	<h1>Filter Options</h1>
+</div>
+
+<% @question.each do |q| %>
+	<a href="browser/view/<%= q.id %>">
+	<div class="card-sm card-front">
+		<div class="question">
+			<%= q.question %>
+		</div>
+	
+		<div class="hint">
+			<%= q.hint %>
+		</div>
+	
+		<div class="answer-block">
+			<div class="answer">
+				<%= q.answer %>
+			</div>
+		
+			<div class="details">
+				<%= q.details %>
+			</div>
+		
+			<div class="reference">
+				<%= q.reference %>
+			</div>
+		</div>
+	
+		<div class="caption">
+			<%= q.category %>
+		</div>
+	</div>
+	</a>
+<% end %>
+</center>
+

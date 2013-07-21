@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia - Questions</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "cards", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "new" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= render :file => 'layouts/_header' %>
+
+<%= yield %>
+
+</body>
+</html>
