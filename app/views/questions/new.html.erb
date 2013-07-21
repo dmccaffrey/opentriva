@@ -31,22 +31,22 @@
 		<% end %>
 	
 		<%= q.label :question %><br />
-		<%= q.text_area :question %>
+		<%= q.text_area :question, :rows => 3 %>
 		
 		<%= q.label :hint %><br />
-		<%= q.text_area :hint %>
+		<%= q.text_area :hint, :rows => 3 %>
 		
 		<%= q.label :answer %><br />
-		<%= q.text_area :answer %>
+		<%= q.text_area :answer, :rows => 3 %>
 		
 		<%= q.label :category %><br />
 		<%= q.text_field :category %>
 		
 		<%= q.label :details %><br />
-		<%= q.text_area :details %>
+		<%= q.text_area :details, :rows => 3 %>
 		
 		<%= q.label :reference %><br />
-		<%= q.text_area :reference %>
+		<%= q.text_area :reference, :rows => 3 %>
 		
 		<%= q.submit "Submit for Approval", :class => 'submit' %>
 	<% end %>

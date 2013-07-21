@@ -9,17 +9,6 @@ class QuestionsController < ApplicationController
 			format.json { render json: @question }
 		end
 	end
-	
-	# GET /questions/purgatory
-	# GET /questions/purgatory.json
-	def purgatory
-		@question = Question_Purgatory.first(25)
-
-		respond_to do |format|
-			format.html	# index.html.erb
-			format.json { render json: @question }
-		end
-	end
 
 	# GET /questions/1
 	# GET /questions/1.json
