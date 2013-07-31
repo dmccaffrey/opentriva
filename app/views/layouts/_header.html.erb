@@ -3,4 +3,12 @@
 	<span id="nav" class="menu-container">
 		<a href="/questions/new">Contribute Questions</a><a href="/questions">Browse Questions</a><a href="/decks">Build A Trivia Deck</a>
 	</span>
+	<span id="user_nav">
+		<% if user_signed_in? %>
+			Signed in as <%= current_user.email %>. Not you?
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class =>"signout" %>
+		<% else %>
+			<%= link_to "Sign up", new_user_registration_path, :class => "signup" %> or <%= link_to "sign in", new_user_session_path, :class =>"signin" %>
+		<% end %>
+	</span>
 </div>

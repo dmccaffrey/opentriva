@@ -45,3 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'protected_attributes'
 gem 'devise'
+gem 'cancan'
+gem 'role_model'

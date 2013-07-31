@@ -84,6 +84,42 @@ body {
 	padding-right:	10px;
 }
 
+#user_nav {
+	margin-left:	10px;
+	color:		#FFF;
+}
+
+#user_nav a {
+	text-decoration: none;
+	list-style:	none;
+	display:	inline-block;
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-right:	10px;
+	padding-left:	10px;
+	margin:		0px;
+	border:		1px solid #333;
+	color:		#333;
+	border-radius:	4px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#888));
+	background-image: -moz-linear-gradient(top,  #CCC,  #888);
+}
+
+#user_nav a.signup {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66CC00), to(#668800))  !important;
+	background-image: -moz-linear-gradient(top,  #66CC00,  #668800)  !important;
+}
+
+#user_nav a.signin {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66CC00), to(#668800))  !important;
+	background-image: -moz-linear-gradient(top,  #66CC00,  #668800)  !important;
+}
+
+#user_nav a.signout {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#CC4400), to(#BB0000));
+	background-image: -moz-linear-gradient(top,  #CC4400,  #BB0000);
+}
+
 .menu-container {
 	padding:	2px;
 	margin:		0px;
